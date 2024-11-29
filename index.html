@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Ordering Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+          <img src="images/logo.png" alt="Logo">
+        </div>
+        <nav class="navbar">
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </header>
+      <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+          navLinks.classList.toggle('show'); 
+        });
+      </script>
+      
+    <main>
+        <div class="new-grid-section">
+            <h2 class="section-heading">A Slice Above the Rest</h2>
+            <div class="new-grid">
+                <div class="new-grid-item">
+                    <h3>Our Story</h3>
+                    <p>Born from a passion for baking and a love for creating delicious memories, we started our journey with one goal: to make every celebration sweeter. From humble beginnings to becoming your go-to cake provider, we pride ourselves on offering more than just cakes—we create moments that are truly unforgettable.</p>
+                </div>
+                <div class="new-grid-item">
+                    <h3>What We Offer</h3>
+                    <p>Whether it's a birthday, wedding, or any special occasion, our cakes are made to perfection with the finest ingredients. Choose from our wide variety of classic and custom cake designs. From rich chocolate to delicate fruit-filled cakes, we tailor every order to your personal taste and preference, ensuring each slice is a work of art.</p>
+                </div>
+                <div class="new-grid-item">
+                    <h3>Get Your Dream Cake</h3>
+                    <p>Ever dreamt of a cake that's as unique as your celebration? With our custom cake design service, your vision becomes a reality. Share your ideas with us, and we'll turn them into a delicious creation that looks as good as it tastes. Our talented team is here to make your dream cake come true!</p>
+                </div>
+                <div class="new-grid-item">
+                    <h3>Cake of the Month</h3>
+                    <p>Every month, we feature a limited-edition "Cake of the Month," a special treat inspired by seasonal flavors, holidays, and unique combinations. Don't miss out on trying these exclusive cakes that are sure to delight your taste buds and make every occasion extra special.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="circle-showcase">
+            <h2 class="section-heading">Our Featured Cakes</h2>
+            <div class="circle-grid">
+                <div class="circle"><img src="./images/belgian.jpg" alt="Cake 1"></div>
+                <div class="circle"><img src="./images/menus3.jpg" alt="Cake 2"></div>
+                <div class="circle"><img src="./images/menus6.jpg" alt="Cake 3"></div>
+                <div class="circle"><img src="./images/butterscotch.jpg" alt="Cake 4"></div>
+                <div class="circle"><img src="./images/menu8.jpg" alt="Cake 5"></div>
+                <div class="circle"><img src="./images/belgian.jpg" alt="Cake 1"></div>
+                <div class="circle"><img src="./images/menus3.jpg" alt="Cake 2"></div>
+                <div class="circle"><img src="./images/menus6.jpg" alt="Cake 3"></div>
+                <div class="circle"><img src="./images/butterscotch.jpg" alt="Cake 4"></div>
+                <div class="circle"><img src="./images/menu8.jpg" alt="Cake 5"></div>
+                <div class="circle"><img src="./images/belgian.jpg" alt="Cake 1"></div>
+                <div class="circle"><img src="./images/menus3.jpg" alt="Cake 2"></div>
+                
+            </div>
+        </div>
+
+        <div class="cake-showcase">
+            <h2 class="section-heading">Our Special Cakes</h2>
+             <div class="cake-grid">
+              <div class="cake-item">
+                  <img src="./images/c1.png" alt="Chocolate Cake">
+                  <h3>Chocolate Dream</h3>
+                  <p>A rich and moist chocolate cake, topped with creamy chocolate frosting.</p>
+                  <button class="order-btn">Order Now</button>
+              </div>
+              <div class="cake-item">
+                  <img src="./images/belgian.jpg" alt="Strawberry Cake">
+                  <h3>Strawberry Bliss</h3>
+                  <p>Soft vanilla cake layered with fresh strawberries and whipped cream.</p>
+                  <button class="order-btn">Order Now</button>
+              </div>
+              <div class="cake-item">
+                  <img src="./images/c4.png" alt="Vanilla Cake">
+                  <h3>Classic Vanilla</h3>
+                  <p>Light and fluffy vanilla cake with a smooth and buttercream frosting.</p>
+                  <button class="order-btn">Order Now</button>
+              </div>
+              <div class="cake-item">
+                  <img src="./images/c2.png" alt="Red Velvet Cake">
+                  <h3>Red Velvet</h3>
+                  <p>A moist red velvet cake with cream cheese frosting and strawberries.</p>
+                  <button class="order-btn">Order Now</button>
+              </div>
+              <div class="cake-item">
+                  <img src="./images/c3.png" alt="Red Velvet Cake">
+                  <h3>Vancho</h3>
+                  <p>A moist Vancho cake with cream cheese frosting and strawberries.</p>
+                  <button class="order-btn">Order Now</button>
+              </div>
+              <div class="cake-item">
+                  <img src="./images/menu5.jpg" alt="Red Velvet Cake">
+                  <h3>Rainbow Cake</h3>
+                  <p>A moist rainbow cake with cream cheese frosting and strawberries.</p>
+                  <button class="order-btn">Order Now</button>
+              </div>
+          </div> 
+          <!-- <div class="feature-grid-section">
+            <h2 class="section-heading">Why Choose Us</h2>
+            <div class="feature-grid">
+                <div class="feature-grid-item">
+                    <img src="images/icon1.png" alt="Icon 1">
+                    <h3>Fresh Ingredients</h3>
+                    <p>We use only the best, freshest ingredients to ensure every bite is delicious.</p>
+                </div>
+                <div class="feature-grid-item small-feature-item">
+                    <img src="images/icon2.png" alt="Icon 2">
+                    <h3>Fast Delivery</h3>
+                    <p>Get your cakes delivered fast, fresh, and right on time.</p>
+                </div>
+                <div class="feature-grid-item small-feature-item">
+                    <img src="images/icon3.png" alt="Icon 3">
+                    <h3>Custom Designs</h3>
+                    <p>Work with us to create a unique cake that fits your style and occasion.</p>
+                </div>
+                <div class="feature-grid-item">
+                    <img src="images/icon4.png" alt="Icon 4">
+                    <h3>Quality Guaranteed</h3>
+                    <p>We guarantee top-notch quality, so you can enjoy every moment with a great cake.</p>
+                </div>
+                <div class="feature-grid-item">
+                    <img src="images/icon5.png" alt="Icon 5">
+                    <h3>Customer Satisfaction</h3>
+                    <p>Our customers are at the heart of everything we do. Your satisfaction is our priority.</p>
+                </div>
+            </div>
+        </div>
+         -->
+
+    </main>
+
+    
+</body>
+</html>
